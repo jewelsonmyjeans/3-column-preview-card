@@ -32,9 +32,12 @@ main {
     color: white;
     font-family: $font-lexend-deca;
     text-align: left;
-    h2 {
+    color: $transparent-white;
+    h1 {
         font-family: $font-big-shoulder;
-        margin: 1em 0;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin: .5em 0;
     }
     section {
         padding: 2em;
@@ -44,6 +47,16 @@ main {
         padding: 1em 2em;
         border-radius: 25px;
         margin: 1em 0;
+        font-family: $font-lexend-deca;
+    }
+    .btn-sedan {
+        color: $bright-orange;
+    }
+    .btn-suv {
+        color: $dark-cyan;
+    }
+    .btn-luxury {
+        color: $very-dark-cyan;
     }
     p {
         color: $transparent-white;
