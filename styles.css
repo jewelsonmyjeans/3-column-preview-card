@@ -81,7 +81,7 @@ main p {
   border-radius: 0 0 15px 15px;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 865px) {
   main {
     flex-direction: row;
   }
