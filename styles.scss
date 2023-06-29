@@ -8,9 +8,7 @@ $very-dark-cyan: hsl(179, 100%, 13%);
 $transparent-white: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
 $very-light-gray: hsl(0, 0%, 95%); /* Background, Headings, Buttons */
 
-*, 
-*::after,
-*::before {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,18 +19,24 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 15px;
-    height: 175vh;
+    height: 100vh;
     background-color: $very-light-gray;
+    overflow: scroll;
+    flex-wrap: wrap;
 }
 
 main {
-    width: 300px;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     color: white;
     font-family: $font-lexend-deca;
     text-align: left;
     color: $transparent-white;
+    flex-wrap: wrap;
+    margin: 1em;
     h1 {
         font-family: $font-big-shoulder;
         font-size: 2rem;
@@ -41,6 +45,8 @@ main {
     }
     section {
         padding: 2em;
+        max-width: 278px;
+        height: 375px;
     }
     .btn {
         border: none;
@@ -48,6 +54,10 @@ main {
         border-radius: 25px;
         margin: 1em 0;
         font-family: $font-lexend-deca;
+    }
+    .btn:active, .btn:focus {
+        background-color: rgba($transparent-white, .2);
+        color: white;
     }
     .btn-sedan {
         color: $bright-orange;
@@ -76,4 +86,16 @@ main {
 .luxury {
     background-color: $very-dark-cyan;
     border-radius: 0 0 15px 15px;
+}
+
+@media screen and (min-width: 400px) {
+    main {
+        flex-direction: row;
+    }
+    .sedan {
+        border-radius: 15px 0 0 15px;
+    }
+    .luxury {
+        border-radius: 0px 15px 15px 0;
+    }
 }
