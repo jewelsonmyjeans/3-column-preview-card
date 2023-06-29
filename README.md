@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/jewelsonmyjeans/3-column-preview-card)
-- Live Site URL: [Add live site URL here](https://jewelsonmyjeans.github.io/3-column-preview-card/)
+- Solution URL: [Solution](https://github.com/jewelsonmyjeans/3-column-preview-card)
+- Live Site URL: [Live Site](https://jewelsonmyjeans.github.io/3-column-preview-card/)
 
 ## My process
 
@@ -32,11 +32,8 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
+- SASS
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### Continued development
 
